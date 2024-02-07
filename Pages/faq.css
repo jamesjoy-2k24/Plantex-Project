@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap");
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --lightcolor: #b2beb5;
+  --box-sadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transform: all 0.2s linear;
+}
+
+body {
+  transition: background-color 0.5s ease;
+}
+
+#dark-mode-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+@media (max-width: 991.98px) {
+  #dark-mode-toggle {
+    position: relative;
+    margin: 0;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 2rem 9%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-sadow);
+}
+header .logo {
+  color: #192a56;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .logo img {
+  color: green;
+  background-color: #27ae60;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+
+header .navbar a {
+  font-size: 2.2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: black;
+}
+header .navbar a.active,
+header .navbar a:hover {
+  color: #000000;
+  border-bottom: solid green;
+}
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background-color: #3f3e3e;
+}
+header .icons i:hover,
+header .icons a:hover {
+  color: wheat;
+}
+header .icons #menu-bars {
+  display: none;
+}
+h1 {
+  margin-left: 10px;
+  letter-spacing: 4px;
+}
+h1:hover {
+  letter-spacing: 5px;
+  transition: 1.7s;
+}
+/* navbarcopy */
+.navbarcopy a {
+  color: black;
+}
+header .navbarcopy {
+  margin-left: 1100px;
+}
+@media (max-width: 600px) {
+  header .navbarcopy {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) {
+  header .navbar {
+    display: none;
+  }
+}
+header .navbarcopy a {
+  font-size: 2.2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: black;
+}
+header .navbarcopy a.active,
+header .navbarcopy a:hover {
+  color: #000000;
+  border-bottom: solid green;
+}
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background-color: #3f3e3e;
+}
+
+.navbarcopy a {
+  color: black;
+}
+
+/* media queries */
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 600px) {
+  header .icons #menu-bars {
+    display: inline-block;
+    background-color: green;
+    font-size: 25px;
+    text-transform: none;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background-color: #eee;
+  }
+  h1 {
+    margin-left: -170px;
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+}
+@media (min-width: 1012px) {
+  header .navbarcopy {
+    margin-left: 800px;
+    /* padding: 10px; */
+    /* background-color: #192a56; */
+  }
+}
+@media (min-width: 600px) {
+  h1 {
+    margin-left: -50px;
+  }
+}
+
+
+/* FAQs start  */
+.FAQs {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #e1f4f8;
+  padding-top: 50px;
+}
+.qustion {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 80%;
+  row-gap: 100px;
+  margin-top: 200px;
+  justify-content: center;
+  margin-left: 150px;
+}
+.content h1 {
+  font-size: 55px;
+  text-align: left;
+  margin-left: 340px;
+  padding-top: 100px;
+}
+.question1 p {
+  font-size: 30px;
+  /* text-align: left; */
+  text-align: left;
+  margin-left: 135px;
+  width: 650px;
+  height: 60px;
+  background-color: #ffffff;
+  margin-top: -100px;
+}
+.question1 p:hover {
+  background-color: #bdbebe;
+  transition: 1.7s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .FAQs {
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+  }
+  .qustion {
+    display: grid;
+    grid-template-columns: auto;
+    width: 80%;
+    row-gap: 70px;
+    /* margin-top: 200px; */
+    justify-content: center;
+    /* margin-left: 150px; */
+  }
+  .content h1 {
+    font-size: 22px;
+    text-align: left;
+    width: 80%;
+    margin-left: 50px;
+    margin-top: -100px;
+  }
+  .question1 p {
+    /* width: 80%; */
+    font-size: 16px;
+    /* text-align: left; */
+    text-align: left;
+    margin-left: -120px;
+    width: 350px;
+    height: 30px;
+    background-color: #edecec;
+    margin-top: -100px;
+  }
+  .question1 p:hover {
+    background-color: #bdbebe;
+    transition: 1.7s;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
