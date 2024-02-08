@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-section {
+body {
   height: 100vh;
   background-color: whitesmoke;
 }
@@ -15,34 +15,116 @@ h1 {
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
-p{
+p {
   font-size: 20px;
   font-weight: 400;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
-.contact-box{
-display: flex;
-justify-content: space-around;
+.contact-box {
+  display: flex;
+  justify-content: space-around;
+}
+form {
+  background: linear-gradient(to left, #75ff05, #1b8117);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+label {
+  margin-left: 1%;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
 
+.des {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }
-form{
-    background-color: lightgreen;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 50px;
+.des textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 15px;
 }
-.input-row{
-display: flex;
-flex-direction: column;
-margin: 20px;
+.des button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+  background: transparent;
 }
-.input-row input{
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    font-size: 15px;
+button:hover {
+  background-color: white;
+  border: 5px dotted  green;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 1.5s;
 }
+.input-row {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+input {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+table{
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    line-height: 3rem;
+}
+
+h3{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+@media(max-width:700px){
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        margin-inline: 5rem;
+    }
+    table{
+        /* margin-left: 10%; */
+        /* margin-top: 10%; */
+        font-size: 18px;
+        color: black;
+    }
+    h1{
+        margin-top: 5%;
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    p{
+        font-size: 15px;
+    }
+    
+}
+
 
