@@ -38,6 +38,15 @@ form {
   margin-top: 50px;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
 }
+.content {
+  margin-top: 3.1rem;
+  width: 420px;
+  height: 550px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, #75ff05, #1b8117);
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.4);
+}
 label {
   margin-left: 1%;
   font-size: 18px;
@@ -124,7 +133,7 @@ h3 {
   }
   h3 {
     font-size: 20px;
-    text-align: center;
+    margin-right: 13rem;
     margin-top: 1rem;
   }
   p {
