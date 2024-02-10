@@ -6,137 +6,74 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  background-color: whitesmoke;
-}
-
 h1 {
-  margin-top: 2rem;
-  font-size: 50px;
-  font-weight: 600;
   text-align: center;
   font-family: "Poppins", sans-serif;
-}
-p {
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-}
-.contact-box {
-  /* border: 2px solid black; */
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-form {
-  width: 400px;
-  background: linear-gradient(to left, #75ff05, #1b8117);
-  padding: 20px;
-  border-radius: 20px;
-  margin-top: 50px;
-  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
-}
-.content {
-  margin-top: 3.1rem;
-  width: 420px;
-  height: 550px;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(to right, #75ff05, #1b8117);
-  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.4);
-}
-label {
-  margin-left: 1%;
-  font-size: 18px;
-  color: rgb(0, 0, 0);
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 3rem;
 }
 
-.des {
+.contact-form {
   display: flex;
-  flex-direction: column;
-  margin: 20px;
-}
-.des textarea {
-  width: 100%;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid gray;
-  font-size: 15px;
-}
-.des button {
+  width: 60%;
+  height: 60vh;
+  margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  margin-top: 20px;
-  padding: 5px;
-  font-size: 20px;
-  border: 1px solid black;
-  border-radius: 50px;
-  background: transparent;
+  background-color: whitesmoke;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
 }
-button:hover {
-  background-color: white;
-  border: 1px solid green;
-  cursor: pointer;
-  transition: 0.5s;
+.contact-info {
+  width: 35%;
+  height: 60vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(10, 124, 6, 1),
+    rgb(43, 255, 0, 1)
+  );
+  /* border-radius: 10px; */
 }
-.input-row {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
+.contant {
+  color: white;
+  padding: 50px;
 }
-input {
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 1rem;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  font-size: 15px;
-}
-table {
-  font-size: 20px;
-  color: black;
-  text-align: justify;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30vh;
-  line-height: 3rem;
-}
-
-h3 {
+h2 {
+  font-weight: 600;
   font-size: 2rem;
-  text-align: center;
-  margin-top: 1rem;
 }
-
-@media (max-width: 700px) {
-  .contact-box {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 5rem;
-  }
-  table {
-    /* margin-left: 10%; */
-    /* margin-top: 10%; */
-    font-size: 18px;
-    color: black;
-  }
-  h1 {
-    margin-top: 5%;
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 20px;
-    margin-right: 13rem;
-    margin-top: 1rem;
-  }
-  p {
-    font-size: 15px;
-  }
+p {
+  margin-top: 1.5rem;
+  font-size: 16px;
+  line-height: 25px;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.icons {
+  margin-bottom: 2rem;
+}
+.item p {
+  font-size: 18px;
+  font-weight: 550;
+}
+i {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 2rem;
+}
+i:hover {
+  color: red;
+  background-color: black;
+  transition: 0.3s ease-in;
+}
+/*Form*/
+form {
+  background-color: rebeccapurple;
+  /* border-radius: 10px; */
+  width: 65%;
+  height: 60vh;
 }
