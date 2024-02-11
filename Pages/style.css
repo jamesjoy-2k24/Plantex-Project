@@ -119,7 +119,7 @@ header .navbarcopy {
 }
 @media (max-width: 600px) {
   header .navbarcopy {
-    display: block;
+    display: none;
   }
 }
 

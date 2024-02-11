@@ -9,3 +9,174 @@ section {
   background: #97a6ce;
   height: 50vh;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-sadow);
+}
+header .logo {
+  color: #192a56;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .logo img {
+  color: green;
+  background-color: #27ae60;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+
+header .navbar a {
+  font-size: 2.2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: black;
+}
+header .navbar a.active,
+header .navbar a:hover {
+  color: #000000;
+  border-bottom: solid green;
+}
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background-color: #3f3e3e;
+}
+header .icons i:hover,
+header .icons a:hover {
+  color: wheat;
+}
+header .icons #menu-bars {
+  display: none;
+}
+h1 {
+  margin-left: 10px;
+  letter-spacing: 4px;
+}
+h1:hover {
+  letter-spacing: 5px;
+  transition: 1.7s;
+}
+/* navbarcopy */
+.navbarcopy a {
+  color: black;
+}
+header .navbarcopy {
+  margin-left: 1100px;
+}
+@media (max-width: 600px) {
+  header .navbarcopy {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  header .navbar {
+    display: none;
+  }
+}
+header .navbarcopy a {
+  font-size: 2.2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: black;
+}
+header .navbarcopy a.active,
+header .navbarcopy a:hover {
+  color: #000000;
+  border-bottom: solid green;
+}
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background-color: #3f3e3e;
+}
+
+.navbarcopy a {
+  color: black;
+}
+
+/* media queries */
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 600px) {
+  header .icons #menu-bars {
+    display: inline-block;
+    background-color: green;
+    font-size: 25px;
+    text-transform: none;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background-color: #eee;
+  }
+  h1 {
+    margin-left: -170px;
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+}
+@media (min-width: 1012px) {
+  header .navbarcopy {
+    margin-left: 800px;
+    /* padding: 10px; */
+    /* background-color: #192a56; */
+  }
+}
+@media (min-width: 600px) {
+  h1 {
+    margin-left: -50px;
+  }
+}
+

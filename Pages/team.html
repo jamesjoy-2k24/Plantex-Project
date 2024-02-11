@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team</title>
     <link rel="stylesheet" href="team.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
+    <header>
+      <a href="#" class="logo"><img src="/Resources/img/favicon.png" /></a>
+      <h1>PLANTEX</h1>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html" class="active">Products</a>
+        <a href="faq.html">FAQs</a>
+        <a href="review.html">Contact Us</a>
+      </nav>
+      <nav class="navbarcopy">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html" class="active">Products</a>
+        <a href="faq.html">FAQs</a>
+        <a href="review.html">Contact Us</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+      </div>
+    </header>
+
     <!--Team section-->
     <section id="team">
       <div class="dis">
@@ -129,5 +155,25 @@
         </div>
       </div>
     </section>
+
+    <script>
+      let menu = document.querySelector("#menu-bars");
+      let navbar = document.querySelector(".navbar");
+
+      menu.onclick = () => {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("active");
+      };
+      window.onscroll = () => {
+        menu.classList.remove("fa-times");
+        navbar.classList.remove("active");
+      };
+      document.querySelector("#search-icon").onclick = () => {
+        document.querySelector("#search-form").classList.toggle("active");
+      };
+      document.querySelector("#close").onclick = () => {
+        document.querySelector("#search-form").classList.remove("active");
+      };
+    </script>
   </body>
 </html>

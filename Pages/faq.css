@@ -119,7 +119,7 @@ header .navbarcopy {
 }
 @media (max-width: 600px) {
   header .navbarcopy {
-    display: block;
+    display: none;
   }
 }
 
@@ -214,7 +214,6 @@ header .icons a {
     margin-left: -50px;
   }
 }
-
 
 /* FAQs start  */
 .FAQs {

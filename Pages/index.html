@@ -6,8 +6,8 @@
     <title>Plantex</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      rel="stylesheet"
-      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
   </head>
   <body>
@@ -19,7 +19,7 @@
         <a href="about.html">About</a>
         <a href="product.html">Products</a>
         <a href="faq.html">FAQs</a>
-        <a href="review.html">Contact Us</a>
+        <a href="contact.html">Contact Us</a>
       </nav>
       <nav class="navbarcopy">
         <a href="index.html" class="active">Home</a>
@@ -46,7 +46,24 @@
       </div>
     </div>
 
-    <script></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      let menu = document.querySelector("#menu-bars");
+      let navbar = document.querySelector(".navbar");
+
+      menu.onclick = () => {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("active");
+      };
+      window.onscroll = () => {
+        menu.classList.remove("fa-times");
+        navbar.classList.remove("active");
+      };
+      document.querySelector("#search-icon").onclick = () => {
+        document.querySelector("#search-form").classList.toggle("active");
+      };
+      document.querySelector("#close").onclick = () => {
+        document.querySelector("#search-form").classList.remove("active");
+      };
+    </script>
   </body>
 </html>
