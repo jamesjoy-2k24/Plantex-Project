@@ -6,40 +6,34 @@
     <title>Contact us</title>
     <link rel="stylesheet" href="contact.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
-    <script
-      src="https://kit.fontawesome.com/2073bc4a5d.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
+    <header>
+      <a href="#" class="logo"><img src="/Resources/img/favicon.png" /></a>
+      <h1>PLANTEX</h1>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <nav class="navbarcopy">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="faq.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+      </div>
+    </header>
+
     <section id="contact">
-      <header>
-        <a href="#" class="logo"><img src="/Resources/img/favicon.png" /></a>
-        <h1>PLANTEX</h1>
-        <nav class="navbar">
-          <a href="index.html" >Home</a>
-          <a href="about.html">About</a>
-          <a href="product.html">Products</a>
-          <a href="faq.html">FAQs</a>
-          <a href="review.html" class="active"Contact Us</a>
-        </nav>
-        <nav class="navbarcopy">
-          <a href="index.html" class="active">Home</a>
-          <a href="about.html">About</a>
-          <a href="product.html">Products</a>
-          <a href="faq.html">FAQs</a>
-          <a href="contact.html" class="active">Contact Us</a>
-        </nav>
-        <div class="icons">
-          <i class="fas fa-bars" id="menu-bars"></i>
-        </div>
-
-      </header>
-
       <h1>Contact Us</h1>
 
       <div class="contact-form">
@@ -142,7 +136,7 @@
         </div>
       </div>
     </section>
-        <script>
+    <script>
       let menu = document.querySelector("#menu-bars");
       let navbar = document.querySelector(".navbar");
 
