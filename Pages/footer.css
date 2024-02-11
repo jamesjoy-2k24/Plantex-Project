@@ -44,8 +44,7 @@
 footer {
   display: flex;
   justify-content: space-around;
-  margin-top: 30rem;
-  height: 50vh;
+  margin-top: 5rem;
 }
 #para {
   font-weight: 600;
