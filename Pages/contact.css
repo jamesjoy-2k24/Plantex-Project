@@ -40,7 +40,6 @@ section {
   padding: 2rem 9%;
 }
 
-
 header {
   position: fixed;
   top: 0;
@@ -210,7 +209,6 @@ header .icons a {
     margin-left: -50px;
   }
 }
-
 
 h1 {
   text-align: center;
@@ -439,3 +437,52 @@ textarea {
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
   }
 }
+/*Footer*/
+
+/*First*/
+/* footer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rem;
+}
+#para {
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 2rem;
+  font-size: 18px;
+}
+.buttons {
+  padding: 20px;
+  background-color: rgba(0, 255, 106, 0.5);
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  margin-top: 2rem;
+}
+.inputs {
+  border: none;
+  font-size: 18px;
+  background: transparent;
+}
+span {
+  background-color: rgba(0, 128, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+}
+.content {
+  color: gray;
+}
+#no {
+  font-weight: 600;
+}
+.icon {
+  display: flex;
+}
+.item {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.icons img {
+  padding: 10px;
+} */

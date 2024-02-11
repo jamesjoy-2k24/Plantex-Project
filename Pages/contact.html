@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact us</title>
     <link rel="stylesheet" href="contact.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    /> -->
   </head>
   <body>
     <header>
       <a href="#" class="logo"><img src="/Resources/img/favicon.png" /></a>
       <h1>PLANTEX</h1>
       <nav class="navbar">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="product.html">Products</a>
         <a href="faq.html">FAQs</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html"  class="active">Contact Us</a>
       </nav>
       <nav class="navbarcopy">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="product.html">Products</a>
         <a href="faq.html">FAQs</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html"  class="active">Contact Us</a>
       </nav>
       <div class="icons">
         <i class="fas fa-bars" id="menu-bars"></i>
@@ -50,14 +50,17 @@
               <div class="icons">
                 <div class="item">
                   <p>
-                    <i class="fa fa-phone" aria-hidden="true"></i>077 835 2713
+                    <a href="tel:+94778352713" style="color: black;"
+                      ><i class="fa fa-phone" aria-hidden="true"></i>077 835
+                      2713</a
+                    >
                   </p>
                 </div>
                 <div class="item">
                   <p>
-                    <i class="fa fa-envelope" aria-hidden="true"></i
-                    >jamesjoy2k24@gmail.com
-                  </p>
+                    <a href="mailto:jamesjoy2k24@gmail" style="color: black;"
+                      ><i class="fa fa-envelope" aria-hidden="true"></i>jamesjoy2k24@gmail.com
+                  </p></a>
                 </div>
                 <div class="item">
                   <p>
@@ -68,7 +71,10 @@
               </div>
             </div>
           </div>
-          <form action="">
+          
+          <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="3e49b032-7455-4968-a44e-ae2d6f9d3567">
+    
             <div class="first">
               <div class="f">
                 <label for="f-name"></label>
@@ -76,7 +82,7 @@
                   type="text"
                   name="f-name"
                   id="f-name"
-                  placeholder="First Name*"
+                  placeholder="First Name*" minlength="5"
                 />
               </div>
               <div class="l">
@@ -85,7 +91,7 @@
                   type="text"
                   name="l-name"
                   id="l-name"
-                  placeholder="Last Name*"
+                  placeholder="Last Name*" minlength="5"
                 />
               </div>
             </div>
@@ -96,7 +102,7 @@
                   type="text"
                   name="p-number"
                   id="p-number"
-                  placeholder="Phone Number*"
+                  placeholder="Phone Number*" minlength="10"
                 />
               </div>
               <div class="e">
@@ -105,7 +111,7 @@
                   type="text"
                   name="email"
                   id="email"
-                  placeholder="Email*"
+                  placeholder="Email*" required
                 />
               </div>
             </div>
@@ -114,12 +120,12 @@
               <textarea
                 name="message"
                 id="message"
-                cols="30"
-                rows="10"
+                cols="20"
+                rows="5"
               ></textarea>
             </div>
             <div class="button">
-              <input type="button" value="POST COMMENT" id="btn" />
+              <a href="#"><input type="submit" value="POST COMMENT" id="btn" /></a>
             </div>
           </form>
         </div>
@@ -136,6 +142,63 @@
         </div>
       </div>
     </section>
+
+          <!--Footer-->
+      <!-- <footer>
+        <div class="first">
+          <div class="logo">
+            <img src="/Resources/img/favicon.png" alt="logo" />
+            <p>Plantex</p>
+          </div>
+          <p id="para">Subscribe to our newsletter <br />to stay update.</p>
+          <button class="buttons">
+            <input type="email" class="inputs" placeholder="Enter your email" required />
+            <span>Subscribe</span>
+          </button>
+        </div>
+        <div class="second">
+          <h2>Our Address</h2>
+          <div class="content">
+            <p id="para">
+              80 - Arasadikkulam,<br />Cheddikulam, <br />
+              Vavuniya - 43100
+            </p>
+            <br />
+            <p id="no">+94-77 835 2713</p>
+          </div>
+        </div>
+        <div class="third">
+          <h2>Contact Us</h2>
+          <div class="content">
+            <p id="para">+94-77 835 2713</p>
+            <div class="icon">
+              <div class="item">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+              <div class="item">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+              <div class="item">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="forth">
+          <h2>
+            We accept all <br />
+            credit cards
+          </h2>
+          <br />
+          <div class="icons">
+            <img src="/Resources/img/card1.png" alt="visa card" />
+            <img src="/Resources/img/card2.png" alt="mastercard" />
+            <img src="/Resources/img/card4.png" alt="american express" />
+            <img src="/Resources/img/card3.png" alt="paypal" />
+          </div>
+        </div>
+      </footer> -->
+
     <script>
       let menu = document.querySelector("#menu-bars");
       let navbar = document.querySelector(".navbar");
@@ -155,5 +218,10 @@
         document.querySelector("#search-form").classList.remove("active");
       };
     </script>
+        <script
+      src="https://kit.fontawesome.com/2073bc4a5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
